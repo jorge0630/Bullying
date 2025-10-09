@@ -1,0 +1,616 @@
+{
+  "nombre": "Aula de clases",
+  "inicio": {
+    "descripcion": "Como prefieres empezar tu historia",
+    "opciones": [
+      { "eleccion": "En un nuevo salon de clases", "siguiente": "a1_1" },
+      { "eleccion": "Un trabajo en grupo", "siguiente": "a1_2" },
+      { "eleccion": "Te colocan un apodo sobre tu fisico", "siguiente": "a1_3" },
+      { "eleccion": "Defendiendo a un compañero", "siguiente": "a1_4" }
+
+
+    ]
+  },
+
+  "a1_1": {
+    "descripcion": "Acabas de ingresar a nuevo salon",
+    "opciones": [
+      { "eleccion": "Nadie te habla, no te incluyen en juegos", "siguiente": "a2" },
+      { "eleccion": "Se ríen de tu ropa, tu peinado, tus gafas", "siguiente": null },
+      { "eleccion": "Te rechazan por tu color de piel", "siguiente": null },
+      { "eleccion": "Te inventan un apodo que te ridiculiza y todos lo repiten", "siguiente": null },
+      { "eleccion": "Te esconden útiles escolares, borradores, colores o la lonchera.", "siguiente": null }
+    ]
+  },
+
+  "a1_2": {
+    "descripcion": "Es momento de realizar una tarea en grupo",
+    "opciones": [
+      { "eleccion": "Te aceptan solo porque la maestra lo exige, pero te ignoran.", "siguiente": "" },
+      { "eleccion": "Te dan las tareas mas pesadas", "siguiente": null },
+      { "eleccion": "Aunque hagas la parte mas importante no te lo reconocen", "siguiente": null },
+      { "eleccion": "Si algo sale mal te dicen que es tu culpa", "siguiente": null },
+      { "eleccion": "Te dicen que nadie quiere trabajar contigo", "siguiente": null }
+    ]
+  },
+
+  "a1_3": {
+    "descripcion": "Los apodos que te colocan, son",
+    "opciones": [
+      { "eleccion": "Sobre tu peso", "siguiente": null },
+      { "eleccion": "Sobre tu estatura", "siguiente": null },
+      { "eleccion": "Por que usas lentes o aparatos dentales", "siguiente": null },
+      { "eleccion": "Por tu tipo de cabello", "siguiente": null },
+      { "eleccion": "Por el color de piel", "siguiente": null }
+    ]
+  },
+
+  "a1_4": {
+    "descripcion": "En que momento defiendes a un compañero",
+    "opciones": [
+      { "eleccion": "Para interrumpir una burla", "siguiente": null },
+      { "eleccion": "Para evitar una agresión fisica", "siguiente": null },
+      { "eleccion": "Buscar una ayuda adulta", "siguiente": null },
+      { "eleccion": "Lo acompañas despues que le hacen bullying", "siguiente": null },
+      { "eleccion": "Defenderlo de ofensas en un trabajo grupal", "siguiente": null }
+    ]
+  },
+
+    "a2": {
+    "descripcion": "Eres nuevo y tus compañeros te hacen a un lado",
+    "opciones": [
+        { "eleccion": "Te ignoran para no tenerte en cuenta", "siguiente": "a2_1" },
+        { "eleccion": "Intentas unirte y te hacen burlas", "siguiente": "a2_2" },
+        { "eleccion": "Logras unirte al juego, pero cambian las reglas para sacarte rápido.", "siguiente": "a2_3" },
+        { "eleccion": "Aunque no dicen nada directamente, cuando te acercas todos se dispersan.", "siguiente": "a2_4" }
+    ]
+    },
+
+
+    "a2_1": {
+    "descripcion": "Como reaccionas ante esa situación",
+    "opciones": [
+        { "eleccion": "Te sientes triste y piensas que nadie quiere estar contigo", "siguiente": "a3" },
+        { "eleccion": "Decides apartarte y no querer volver al recreo.", "siguiente": null },
+        { "eleccion": "Te sienta solo a mirar cómo juegan los demás, deseando participar.", "siguiente": null },
+        { "eleccion": "Aunque no lo demuestras, sientes rabia porque no te dejan integrarte", "siguiente": null },
+        { "eleccion": "Crees que no vales la pena, que no eres divertido ni interesante.", "siguiente": null }
+    ]
+    },
+
+    "a2_2": {
+    "descripcion": "Cuando no permiten integrarte con ellos",
+    "opciones": [
+        { "eleccion": "Intentas buscar otro grupo e integrarte", "siguiente": null },
+        { "eleccion": "Te sientas solo y simplemente no le das importancia", "siguiente": null },
+        { "eleccion": "Intentas desahogarte con un profesor", "siguiente": null },
+        { "eleccion": "Tomas una actitud vengativa hacia ellos", "siguiente": null },
+        { "eleccion": "Te sienta solo a mirar cómo juegan los demás, deseando participar.", "siguiente": null }
+    ]
+    },
+
+    "a2_3": {
+    "descripcion": "Despues que notas que te intentan sacar del juego",
+    "opciones": [
+        { "eleccion": "Actuas de manera positiva y no te dejas", "siguiente": null },
+        { "eleccion": "Te incomodas y te dejas sacar aproposito", "siguiente": null },
+        { "eleccion": "Intentas irte a los golpes con algun compañero", "siguiente": null },
+        { "eleccion": "Te llenas de rabia y rompes en llanto.", "siguiente": null },
+        { "eleccion": "Le pones quejas a el profesor", "siguiente": null }
+    ]
+    },
+
+    "a2_4": {
+    "descripcion": "Notas cómo todos se alejan en cuanto llegas.",
+    "opciones": [
+        { "eleccion": "La profe lo nota y habla con el grupo", "siguiente": null },
+        { "eleccion": "Se te acerca otro compañero y decide hablar contigo", "siguiente": null },
+        { "eleccion": "Notas que un grupo de compañero se rien por que no te quieren integrar", "siguiente": null },
+        { "eleccion": "No le das importacia y te sientas tu solo", "siguiente": null },
+        { "eleccion": "Tomas la situación con calma e intentas no sentirte mal", "siguiente": null }
+    ]
+    },
+
+    "a3": {
+  "descripcion": "Como reaccionas cuando te sientes triste.",
+  "opciones": [
+    {
+      "eleccion": "Se te va el apetito por completo",
+      "siguiente": "a3_1"
+    },
+    {
+      "eleccion": "Te apartas a solas y lloras en silencio.",
+      "siguiente": "a3_2"
+    },
+    {
+      "eleccion": "Buscas ayuda del profesor",
+      "siguiente": "a3_3"
+    }
+  ]
+},
+"a3_1": {
+  "descripcion": "Mantienes tu esfuerzo y no te avergüenzas de estudiar.",
+  "opciones": [
+    { "eleccion": "Te concentras en tu meta académica 🎯", "siguiente": null },
+    { "eleccion": "Motivas a otros a unirse al estudio 🤝", "siguiente": null },
+    { "eleccion": "Hablas con tus amigos sobre la importancia de prepararse 📚", "siguiente": null },
+    { "eleccion": "Ignoras completamente las burlas 😌", "siguiente": null },
+    { "eleccion": "Te sientes orgulloso de tu disciplina 💪", "siguiente": null }
+  ]
+},
+"a3_2": {
+  "descripcion": "Respondes molesto, generando tensión con los que se burlan.",
+  "opciones": [
+    { "eleccion": "La discusión sube y la profe interviene 👩‍🏫", "siguiente": null },
+    { "eleccion": "Un amigo te calma y bajas el tono 🤝", "siguiente": null },
+    { "eleccion": "Te arrepientes de perder la calma 😔", "siguiente": null },
+    { "eleccion": "Pides disculpas y aclaras tu reacción 🙏", "siguiente": null },
+    { "eleccion": "Decides ignorarlos después 😶", "siguiente": null }
+  ]
+},
+"a3_3": {
+  "descripcion": "Te distraes para evitar ser el centro de las burlas.",
+  "opciones": [
+    { "eleccion": "Te pones a dibujar o escribir 📝", "siguiente": null },
+    { "eleccion": "Cambias de tema para desviar la atención 🎭", "siguiente": null },
+    { "eleccion": "Esperas que empiece la clase con calma ⏳", "siguiente": null },
+    { "eleccion": "Buscas conversar con alguien cercano 🤗", "siguiente": null },
+    { "eleccion": "Te aíslas un poco para sentirte seguro 🚶", "siguiente": null }
+  ]
+},
+
+"b1": {
+  "descripcion": "Le cuentas que estás teniendo problemas en tu casa. 👉 Un grupo de estudiantes escucha y empieza a inventar chismes sobre tu familia.",
+  "opciones": [
+    {
+      "eleccion": "Te sientes mal y decides no volver a hablar 😔",
+      "siguiente": "b1_1"
+    },
+    {
+      "eleccion": "Lo hablas con la profe para que ponga orden 👩‍🏫",
+      "siguiente": "b1_2"
+    },
+    {
+      "eleccion": "Enfrentas a los que inventan chismes ✊",
+      "siguiente": "b1_3"
+    }
+  ]
+},
+"b1_1": {
+  "descripcion": "Guardas silencio y decides no compartir más tus sentimientos.",
+  "opciones": [
+    { "eleccion": "Te aíslas y te sientes solo 😞", "siguiente": null },
+    { "eleccion": "Encuentras apoyo en un amigo más adelante 🤝", "siguiente": null },
+    { "eleccion": "Decides escribir tus pensamientos en un cuaderno 📓", "siguiente": null },
+    { "eleccion": "Buscas distraerte en otra actividad 🎨", "siguiente": null },
+    { "eleccion": "Reflexionas sobre a quién contar tus cosas 🤔", "siguiente": null }
+  ]
+},
+"b1_2": {
+  "descripcion": "Hablas con la profesora para que intervenga y detenga los chismes.",
+  "opciones": [
+    { "eleccion": "La profe habla con los estudiantes 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te sientes respaldado y más seguro 💪", "siguiente": null },
+    { "eleccion": "Los chismes se detienen pronto 😌", "siguiente": null },
+    { "eleccion": "Agradeces a la profe por ayudarte 🙏", "siguiente": null },
+    { "eleccion": "Aprendes a confiar en los adultos de apoyo 🌟", "siguiente": null }
+  ]
+},
+"b1_3": {
+  "descripcion": "Decides enfrentar a quienes inventan chismes.",
+  "opciones": [
+    { "eleccion": "Les pides con firmeza que paren ✋", "siguiente": null },
+    { "eleccion": "Se genera una discusión acalorada 😡", "siguiente": null },
+    { "eleccion": "Un amigo te apoya en la confrontación 🤝", "siguiente": null },
+    { "eleccion": "Un adulto interviene para calmar la situación 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te sientes orgulloso de defenderte 💪", "siguiente": null }
+  ]
+},
+
+"b2": {
+  "descripcion": "Le cuentas que un compañero te está buscando problemas. 👉 El compañero se entera y comienza a molestarte más frente a los demás.",
+  "opciones": [
+    {
+      "eleccion": "Lo ignoras 😶",
+      "siguiente": "b2_1"
+    },
+    {
+      "eleccion": "Intentas hablar con él directamente 🗣️",
+      "siguiente": "b2_2"
+    },
+    {
+      "eleccion": "Buscas apoyo en un amigo 🤝",
+      "siguiente": "b2_3"
+    },
+    {
+      "eleccion": "Respondes con violencia 😠",
+      "siguiente": "b2_4"
+    }
+  ]
+},
+"b2_1": {
+  "descripcion": "Decides ignorar las provocaciones y no reaccionar.",
+  "opciones": [
+    { "eleccion": "El compañero se aburre y deja de molestarte 😌", "siguiente": null },
+    { "eleccion": "Te concentras en tus estudios 📚", "siguiente": null },
+    { "eleccion": "Encuentras apoyo silencioso de otros 🤝", "siguiente": null },
+    { "eleccion": "Piensas en contárselo a la profe después 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te fortaleces al no reaccionar 💪", "siguiente": null }
+  ]
+},
+"b2_2": {
+  "descripcion": "Intentas hablar directamente con el compañero.",
+  "opciones": [
+    { "eleccion": "Te escucha y deciden hacer las paces 🤝", "siguiente": null },
+    { "eleccion": "No quiere escuchar y se burla más 😒", "siguiente": null },
+    { "eleccion": "Hablas con él en privado y mejora la relación 💬", "siguiente": null },
+    { "eleccion": "Un adulto media en la conversación 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te das cuenta que no todos quieren resolver conflictos 😔", "siguiente": null }
+  ]
+},
+"b2_3": {
+  "descripcion": "Buscas apoyo en un amigo cercano.",
+  "opciones": [
+    { "eleccion": "Tu amigo te acompaña y te sientes más seguro 🤝", "siguiente": null },
+    { "eleccion": "Ambos enfrentan al compañero ✊", "siguiente": null },
+    { "eleccion": "Tu amigo te aconseja hablar con un adulto 👩‍🏫", "siguiente": null },
+    { "eleccion": "Deciden mantenerse juntos para evitar problemas 👬", "siguiente": null },
+    { "eleccion": "Agradeces el apoyo y te sientes acompañado 😊", "siguiente": null }
+  ]
+},
+"b2_4": {
+  "descripcion": "Respondes con violencia y la situación escala.",
+  "opciones": [
+    { "eleccion": "Se genera una pelea y un adulto interviene 🛑", "siguiente": null },
+    { "eleccion": "Te arrepientes de haber reaccionado así 😔", "siguiente": null },
+    { "eleccion": "El compañero responde con más violencia 😡", "siguiente": null },
+    { "eleccion": "La profe te llama la atención 👩‍🏫", "siguiente": null },
+    { "eleccion": "Aprendes que la violencia no es la mejor salida 💡", "siguiente": null }
+  ]
+},
+
+"b3": {
+  "descripcion": "Le preguntas por un tema que no entiendes. 👉 Algunos compañeros te llaman 'burro' o 'tonto' en voz baja.",
+  "opciones": [
+    {
+      "eleccion": "Sigues preguntando con valentía 💪",
+      "siguiente": "b3_1"
+    },
+    {
+      "eleccion": "Te quedas callado para evitar más burlas 🤐",
+      "siguiente": "b3_2"
+    },
+    {
+      "eleccion": "Respondes con un chiste para quitarle tensión 😅",
+      "siguiente": "b3_3"
+    }
+  ]
+},
+"b3_1": {
+  "descripcion": "Mantienes tu interés y sigues preguntando con valentía.",
+  "opciones": [
+    { "eleccion": "La profe valora tu iniciativa 👩‍🏫", "siguiente": null },
+    { "eleccion": "Aprendes mejor gracias a tu constancia 📘", "siguiente": null },
+    { "eleccion": "Algunos compañeros empiezan a respetarte 💪", "siguiente": null },
+    { "eleccion": "Motivas a otros a preguntar también 🙋", "siguiente": null },
+    { "eleccion": "Demuestras que no tienes miedo de aprender 🌟", "siguiente": null }
+  ]
+},
+"b3_2": {
+  "descripcion": "Decides quedarte callado para evitar más burlas.",
+  "opciones": [
+    { "eleccion": "Te quedas con la duda sin resolver 🤔", "siguiente": null },
+    { "eleccion": "Planeas preguntar después en privado 👩‍🏫", "siguiente": null },
+    { "eleccion": "Un amigo se acerca y te explica 🤝", "siguiente": null },
+    { "eleccion": "Buscas la respuesta por tu cuenta en un libro 📚", "siguiente": null },
+    { "eleccion": "Aprendes que el miedo puede frenar tu aprendizaje 😓", "siguiente": null }
+  ]
+},
+"b3_3": {
+  "descripcion": "Respondes con humor y reduces la tensión en la clase.",
+  "opciones": [
+    { "eleccion": "La clase se ríe contigo y no de ti 😄", "siguiente": null },
+    { "eleccion": "El abusador se queda sin palabras 😶", "siguiente": null },
+    { "eleccion": "La profe sonríe y responde tu duda 👩‍🏫", "siguiente": null },
+    { "eleccion": "Usas el humor como herramienta para conectar 🤝", "siguiente": null },
+    { "eleccion": "Decides mantener esa actitud positiva en el futuro ✨", "siguiente": null }
+  ]
+},
+
+"c1": {
+  "descripcion": "Te quedas esperando que la clase empiece. 👉 Dos estudiantes empiezan a tirarte papelitos para molestarte.",
+  "opciones": [
+    {
+      "eleccion": "Te ríes y juegas con ellos 😂",
+      "siguiente": "c1_1"
+    },
+    {
+      "eleccion": "Los ignoras 😶",
+      "siguiente": "c1_2"
+    },
+    {
+      "eleccion": "Se lo cuentas a la profe 👩‍🏫",
+      "siguiente": "c1_3"
+    }
+  ]
+},
+"c1_1": {
+  "descripcion": "Decides seguirles el juego y reírte con ellos.",
+  "opciones": [
+    { "eleccion": "El ambiente se relaja y se divierten 😄", "siguiente": null },
+    { "eleccion": "La profe se da cuenta y les llama la atención 👩‍🏫", "siguiente": null },
+    { "eleccion": "Los compañeros se cansan y paran pronto 😌", "siguiente": null },
+    { "eleccion": "Aprovechas para hacer una broma ligera 🎭", "siguiente": null },
+    { "eleccion": "Decides parar tú mismo antes que se pase de la raya ✋", "siguiente": null }
+  ]
+},
+"c1_2": {
+  "descripcion": "Ignoras los papelitos y no reaccionas.",
+  "opciones": [
+    { "eleccion": "Ellos se aburren y paran 😶", "siguiente": null },
+    { "eleccion": "Te concentras en tus cosas 📚", "siguiente": null },
+    { "eleccion": "Miras hacia otro lado para no prestar atención 👀", "siguiente": null },
+    { "eleccion": "Decides cambiarte de lugar en el aula 🪑", "siguiente": null },
+    { "eleccion": "Piensas contárselo luego a la profe 👩‍🏫", "siguiente": null }
+  ]
+},
+"c1_3": {
+  "descripcion": "Se lo cuentas a la profe para que intervenga.",
+  "opciones": [
+    { "eleccion": "La profe habla con ellos y paran 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te sientes más tranquilo después 😌", "siguiente": null },
+    { "eleccion": "Los compañeros se incomodan y te dejan en paz 🙃", "siguiente": null },
+    { "eleccion": "Agradeces a la profe por apoyarte 🙏", "siguiente": null },
+    { "eleccion": "Decides sentarte cerca de la profe la próxima vez 📍", "siguiente": null }
+  ]
+},
+
+"c2": {
+  "descripcion": "Te pones a correr por todo el salón. 👉 Algunos se ríen, otros se enojan, y uno tropieza contigo y te insulta.",
+  "opciones": [
+    {
+      "eleccion": "Le pides disculpas 🙏",
+      "siguiente": "c2_1"
+    },
+    {
+      "eleccion": "Le respondes con insultos 😡",
+      "siguiente": "c2_2"
+    },
+    {
+      "eleccion": "Te sales del salón para calmarte 🚪",
+      "siguiente": "c2_3"
+    }
+  ]
+},
+"c2_1": {
+  "descripcion": "Decides disculparte con el compañero.",
+  "opciones": [
+    { "eleccion": "Él acepta tu disculpa y se calma 🙂", "siguiente": null },
+    { "eleccion": "La profe reconoce tu gesto positivo 👩‍🏫", "siguiente": null },
+    { "eleccion": "Otros compañeros valoran tu actitud 👍", "siguiente": null },
+    { "eleccion": "Te sientes mejor al resolverlo en paz 🌟", "siguiente": null },
+    { "eleccion": "Decides no volver a correr en clase ⚠️", "siguiente": null }
+  ]
+},
+"c2_2": {
+  "descripcion": "Respondes con insultos y la tensión aumenta.",
+  "opciones": [
+    { "eleccion": "El compañero responde y la discusión escala 😡", "siguiente": null },
+    { "eleccion": "La profe interviene para detener la pelea 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te arrepientes de haber reaccionado así 😔", "siguiente": null },
+    { "eleccion": "Un amigo interviene para calmar la situación 🤝", "siguiente": null },
+    { "eleccion": "Decides salirte después para calmarte 🚶", "siguiente": null }
+  ]
+},
+"c2_3": {
+  "descripcion": "Te retiras del salón para calmarte.",
+  "opciones": [
+    { "eleccion": "Respiras profundo y vuelves más tranquilo 🌬️", "siguiente": null },
+    { "eleccion": "La profe te pregunta qué ocurrió 👩‍🏫", "siguiente": null },
+    { "eleccion": "Encuentras a un amigo afuera y conversan 💬", "siguiente": null },
+    { "eleccion": "Decides esperar en silencio hasta estar mejor 🤐", "siguiente": null },
+    { "eleccion": "Reflexionas sobre tu reacción 🤔", "siguiente": null }
+  ]
+},
+
+"c3": {
+  "descripcion": "Te da hambre y te comes la merienda antes del descanso. 👉 Un compañero te la quita y empieza a burlarse diciendo que eres 'glotón'.",
+  "opciones": [
+    {
+      "eleccion": "Reclamas tu merienda ✋",
+      "siguiente": "c3_1"
+    },
+    {
+      "eleccion": "Buscas apoyo en un amigo 🤝",
+      "siguiente": "c3_2"
+    },
+    {
+      "eleccion": "Lo ignoras y compartes con otro compañero 🍎",
+      "siguiente": "c3_3"
+    }
+  ]
+},
+"c3_1": {
+  "descripcion": "Exiges que te devuelva tu merienda.",
+  "opciones": [
+    { "eleccion": "El compañero se disculpa y te la devuelve 🙏", "siguiente": null },
+    { "eleccion": "La profe interviene para resolver la situación 👩‍🏫", "siguiente": null },
+    { "eleccion": "El compañero se niega y te sientes frustrado 😞", "siguiente": null },
+    { "eleccion": "Otros amigos intervienen y apoyan 🤝", "siguiente": null },
+    { "eleccion": "Decides no llevar merienda la próxima vez 😓", "siguiente": null }
+  ]
+},
+"c3_2": {
+  "descripcion": "Buscas el apoyo de un amigo cercano.",
+  "opciones": [
+    { "eleccion": "Tu amigo te acompaña y recuperas tu merienda 🤝", "siguiente": null },
+    { "eleccion": "El abusador se intimida y retrocede 😮", "siguiente": null },
+    { "eleccion": "Ambos van con la profe 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te sientes aliviado de no estar solo 😊", "siguiente": null },
+    { "eleccion": "Agradeces a tu amigo por apoyarte 🙏", "siguiente": null }
+  ]
+},
+"c3_3": {
+  "descripcion": "Ignoras al abusador y compartes tu merienda con alguien más.",
+  "opciones": [
+    { "eleccion": "El compañero se queda confundido 😶", "siguiente": null },
+    { "eleccion": "Pasas un buen rato compartiendo con tu amigo 🍎", "siguiente": null },
+    { "eleccion": "El abusador se va al no recibir atención 🚶", "siguiente": null },
+    { "eleccion": "Te sientes feliz de haber compartido 🙂", "siguiente": null },
+    { "eleccion": "Decides seguir actuando con generosidad 💡", "siguiente": null }
+  ]
+},
+
+"d1": {
+  "descripcion": "Llegaste triste. 👉 Un compañero se da cuenta y comienza a molestarte diciendo que 'siempre andas amargado'.",
+  "opciones": [
+    {
+      "eleccion": "Le cuentas cómo te sientes 💬",
+      "siguiente": "d1_1"
+    },
+    {
+      "eleccion": "Lo ignoras 😶",
+      "siguiente": "d1_2"
+    },
+    {
+      "eleccion": "Le respondes de mala manera 😡",
+      "siguiente": "d1_3"
+    }
+  ]
+},
+"d1_1": {
+  "descripcion": "Decides expresarle tus sentimientos.",
+  "opciones": [
+    { "eleccion": "El compañero se sorprende y se calma 😯", "siguiente": null },
+    { "eleccion": "Te escucha y se disculpa 🙏", "siguiente": null },
+    { "eleccion": "La conversación mejora la relación 🤝", "siguiente": null },
+    { "eleccion": "Otros se interesan y te apoyan 👥", "siguiente": null },
+    { "eleccion": "Te sientes mejor tras desahogarte 😊", "siguiente": null }
+  ]
+},
+"d1_2": {
+  "descripcion": "Ignoras al compañero y no reaccionas.",
+  "opciones": [
+    { "eleccion": "Se aburre y deja de molestarte 😌", "siguiente": null },
+    { "eleccion": "Decides concentrarte en tus cosas 📚", "siguiente": null },
+    { "eleccion": "Te aíslas para estar más tranquilo 🚶", "siguiente": null },
+    { "eleccion": "Esperas a que empiece la clase ⏳", "siguiente": null },
+    { "eleccion": "Piensas en contárselo a alguien de confianza 👂", "siguiente": null }
+  ]
+},
+"d1_3": {
+  "descripcion": "Reaccionas con enojo y contestas de mala manera.",
+  "opciones": [
+    { "eleccion": "La situación escala y discuten 😠", "siguiente": null },
+    { "eleccion": "Un amigo interviene para calmar la tensión 🤝", "siguiente": null },
+    { "eleccion": "La profe interviene y los separa 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te arrepientes de haber respondido mal 😔", "siguiente": null },
+    { "eleccion": "Reflexionas sobre reaccionar distinto la próxima vez 🤔", "siguiente": null }
+  ]
+},
+
+"d2": {
+  "descripcion": "No quieres hablar con nadie. 👉 Te quedas aislado y tus compañeros no te incluyen en los juegos ni trabajos en grupo.",
+  "opciones": [
+    {
+      "eleccion": "Te esfuerzas por unirte 🤝",
+      "siguiente": "d2_1"
+    },
+    {
+      "eleccion": "Te quedas solo y triste 😔",
+      "siguiente": "d2_2"
+    },
+    {
+      "eleccion": "Lo hablas con alguien de confianza 👩‍🏫",
+      "siguiente": "d2_3"
+    }
+  ]
+},
+"d2_1": {
+  "descripcion": "Intentas acercarte a tus compañeros para integrarte.",
+  "opciones": [
+    { "eleccion": "Te aceptan poco a poco 😊", "siguiente": null },
+    { "eleccion": "Algunos te miran raro pero mejoras la relación 👀", "siguiente": null },
+    { "eleccion": "Decides proponer un juego para incluirte 🎲", "siguiente": null },
+    { "eleccion": "Encuentras apoyo en un amigo cercano 🤝", "siguiente": null },
+    { "eleccion": "Te sientes orgulloso de haberlo intentado 💪", "siguiente": null }
+  ]
+},
+"d2_2": {
+  "descripcion": "Te aíslas completamente y te sientes triste.",
+  "opciones": [
+    { "eleccion": "Reflexionas sobre tu soledad 😞", "siguiente": null },
+    { "eleccion": "Decides hablar con un amigo más tarde 👂", "siguiente": null },
+    { "eleccion": "Te concentras en un pasatiempo personal 🎨", "siguiente": null },
+    { "eleccion": "Esperas que alguien se acerque a ti ⏳", "siguiente": null },
+    { "eleccion": "Te prometes intentar otra vez al día siguiente 🌟", "siguiente": null }
+  ]
+},
+"d2_3": {
+  "descripcion": "Hablas con alguien de confianza sobre lo que sientes.",
+  "opciones": [
+    { "eleccion": "Te sientes escuchado y apoyado 🤗", "siguiente": null },
+    { "eleccion": "La profe te da consejos 👩‍🏫", "siguiente": null },
+    { "eleccion": "Un amigo se ofrece a incluirte en actividades 🤝", "siguiente": null },
+    { "eleccion": "Decides expresar más tus emociones 💬", "siguiente": null },
+    { "eleccion": "Aprendes que pedir ayuda te hace más fuerte 💡", "siguiente": null }
+  ]
+},
+
+"d3": {
+  "descripcion": "Un compañero te hizo sentir mal y te deprimiste. 👉 Durante la clase, sigue haciéndote bromas pesadas frente a los demás.",
+  "opciones": [
+    {
+      "eleccion": "Lo enfrentas con valentía ✊",
+      "siguiente": "d3_1"
+    },
+    {
+      "eleccion": "Se lo cuentas a un amigo cercano 👂",
+      "siguiente": "d3_2"
+    },
+    {
+      "eleccion": "Guardas silencio para que no te molesten más 🤐",
+      "siguiente": "d3_3"
+    }
+  ]
+},
+"d3_1": {
+  "descripcion": "Decides enfrentarlo con valentía delante de los demás.",
+  "opciones": [
+    { "eleccion": "El compañero se sorprende y se calma 😯", "siguiente": null },
+    { "eleccion": "Algunos se ríen, pero otros te apoyan 🤝", "siguiente": null },
+    { "eleccion": "La profe interviene y la situación mejora 👩‍🏫", "siguiente": null },
+    { "eleccion": "Te sientes orgulloso de haberte defendido 💪", "siguiente": null },
+    { "eleccion": "Decides mantener tu firmeza en el futuro ✨", "siguiente": null }
+  ]
+},
+"d3_2": {
+  "descripcion": "Le cuentas lo que pasa a un amigo cercano.",
+  "opciones": [
+    { "eleccion": "Tu amigo te escucha y te consuela 🤗", "siguiente": null },
+    { "eleccion": "Te aconseja hablar con la profe 👩‍🏫", "siguiente": null },
+    { "eleccion": "Deciden enfrentarlo juntos 💪", "siguiente": null },
+    { "eleccion": "Tu amigo te acompaña para que no te sientas solo 👬", "siguiente": null },
+    { "eleccion": "Te sientes mejor al compartir lo que sientes 😊", "siguiente": null }
+  ]
+},
+"d3_3": {
+  "descripcion": "Decides guardar silencio para evitar más burlas.",
+  "opciones": [
+    { "eleccion": "El compañero sigue molestando un tiempo más 😒", "siguiente": null },
+    { "eleccion": "Un adulto se da cuenta y lo detiene 👩‍🏫", "siguiente": null },
+    { "eleccion": "Un amigo te anima a hablar ✊", "siguiente": null },
+    { "eleccion": "Te sientes triste por no expresarte 😔", "siguiente": null },
+    { "eleccion": "Reflexionas sobre cuándo sí deberías hablar 💡", "siguiente": null }
+  ]
+},
+
+"finalAula": {
+  "descripcion": "La clase termina y reflexionas sobre lo que pasó en el día. Cada decisión que tomaste afectó cómo te sentiste y cómo se desarrollaron las relaciones con tus compañeros y profesora.",
+  "leccion": "Tus decisiones en el aula influyen en tu bienestar y en la convivencia. Ser valiente para preguntar, pedir ayuda cuando lo necesitas, defenderte con respeto y mostrar empatía hacia los demás fortalece la confianza y construye un ambiente escolar más seguro y positivo."
+}
+
+
+
+}
+

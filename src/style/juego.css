@@ -1,0 +1,84 @@
+.avatar-container {
+  width: 100%;
+  height: calc(100vh - 70px); /* 👈 resta el alto del navbar */
+  margin-top: 70px; /* 👈 lo baja para que no lo tape */
+}
+
+.avatar-iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Fondo general */
+.game-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 40px 20px;
+  background: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+  color: white;
+  font-family: "Press Start 2P", cursive; /* Tipografía gamer */
+  text-align: center;
+}
+
+/* Título estilo neon */
+.game-title {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.neon-text {
+  color: #fff;
+  text-shadow: 
+    0 0 5px #ff00de,
+    0 0 10px #ff00de,
+    0 0 20px #ff00de,
+    0 0 40px #ff00de;
+}
+
+/* Caja para avatar con sombra */
+.avatar-box {
+  width: 100%;
+  height: 90vh;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+/* Texto de instrucciones */
+.game-instructions {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #ddd;
+  text-shadow: 0 0 5px #00ffff;
+}
+
+/* Botón Volver */
+.back-button {
+  align-self: flex-start;
+  background-color: #ff00de;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #ff00de, 0 0 20px #ff00de;
+  transition: all 0.2s ease-in-out;
+}
+
+.back-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #ff00de, 0 0 40px #ff00de;
+}
+/* Importar fuente retro gamer */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");

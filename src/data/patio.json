@@ -1,0 +1,625 @@
+{ "escenario_inicial": {
+    "descripcion": "Es la hora del recreo. Estás en el patio con todos tus compañeros.",
+    "opciones": {
+      "A": "Te unes a jugar fútbol ⚽",
+      "B": "Vas a sentarte solo en una banca 🪑",
+      "C": "Te acercas a un grupo de amigos 🤝",
+      "D": "Te quedas caminando sin rumbo 🚶"
+    }
+  },
+  "ramas": {
+    "A": {
+      "a1": {
+        "descripcion": "Te pasan el balón y lo pierdes. Un compañero empieza a burlarse llamándote 'tronco' o 'malo para el fútbol'.",
+        "opciones": [
+          {
+            "eleccion": "Sigues jugando sin prestar atención 💪",
+            "siguiente": {
+              "a1_1": {
+                "descripcion": "Sigues participando en el juego como si nada, demostrando concentración.",
+                "opciones": [
+                  "Practicas más con tus compañeros para mejorar ⚽",
+                  "Pides a alguien que te dé consejos 🙋‍♂️",
+                  "Te concentras en divertirte más que en ganar 😄",
+                  "Invitas al burlón a pasar el balón 🤝",
+                  "Haces un gol más tarde y sonríes 🎉"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Le contestas enojado 😡",
+            "siguiente": {
+              "a1_2": {
+                "descripcion": "Respondes con enojo; la tensión sube entre ustedes.",
+                "opciones": [
+                  "Discuten y la profe interviene 👩‍🏫",
+                  "Te arrepientes y pides disculpas 🙏",
+                  "La situación escala a un empujón 😟",
+                  "Alguien más calma la situación 🧑‍🤝‍🧑",
+                  "Sales del juego para calmarte 🚪"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te sales del juego y te sientes mal 😔",
+            "siguiente": {
+              "a1_3": {
+                "descripcion": "Te alejas, te sientes triste y observas desde fuera.",
+                "opciones": [
+                  "Hablas con un amigo sobre cómo te sientes 👂",
+                  "Vuelves después y vuelves a intentarlo ⚽",
+                  "Buscas a un profesor para contar lo ocurrido 👩‍🏫",
+                  "Te quedas solo y piensas en dejar el fútbol 😥",
+                  "Practicas por tu cuenta para mejorar 🏃‍♂️"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "a2": {
+        "descripcion": "El capitán del equipo no te quiere dejar jugar. Dice que 'no sirves' y te deja fuera.",
+        "opciones": [
+          {
+            "eleccion": "Le pides otra oportunidad ✋",
+            "siguiente": {
+              "a2_1": {
+                "descripcion": "Pides una nueva chance para participar.",
+                "opciones": [
+                  "Te dan 5 minutos y aprovechas para demostrarte ⚽",
+                  "Te ignoran y sigues intentando convencer 🤝",
+                  "Otro equipo te invita a jugar con ellos 👥",
+                  "Hablas con un adulto para mediar 👩‍🏫",
+                  "Aceptas y practicas para la próxima vez 🏃‍♂️"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Aceptas y te vas triste 😢",
+            "siguiente": {
+              "a2_2": {
+                "descripcion": "Te alejas desanimado por no ser elegido.",
+                "opciones": [
+                  "Te unes a otra actividad menos competitiva 🎨",
+                  "Hablas con alguien que te apoya 🤝",
+                  "Decides entrenar para mejorar 🏃",
+                  "Te sientas solo y comes merienda 🍎",
+                  "Vuelves después con más ánimo 🙂"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Hablas con otro grupo para que te incluyan 🤝",
+            "siguiente": {
+              "a2_3": {
+                "descripcion": "Buscas compañeros alternativos y te integran.",
+                "opciones": [
+                  "Juegas en otro equipo y te diviertes 🎉",
+                  "Formas tu propio mini-equipo con amigos ⚽",
+                  "Haces nuevos amigos que te valoran 👋",
+                  "Intercambias jugadores para aprender más 🔁",
+                  "Agradeces la oportunidad y mejoras 🤗"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "a3": {
+        "descripcion": "Anotas un gol. El abusador se enoja y te empuja diciendo que fue suerte.",
+        "opciones": [
+          {
+            "eleccion": "Le respondes con calma y sigues jugando ⚽",
+            "siguiente": {
+              "a3_1": {
+                "descripcion": "Mantienes la calma y sigues participando del juego.",
+                "opciones": [
+                  "El equipo te felicita y te anima 🎉",
+                  "Conversas con él después para resolver el empujón 💬",
+                  "Pides que la profe observe el comportamiento 👩‍🏫",
+                  "Sigues disfrutando del juego con humildad 🙂",
+                  "Ofreces pasarle el balón para calmar tensiones 🤝"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Reclamas que no te empuje ✊",
+            "siguiente": {
+              "a3_2": {
+                "descripcion": "Exiges respeto y pides que no te empuje.",
+                "opciones": [
+                  "La discusión se enfría cuando el árbitro interviene 🛑",
+                  "Te disculpas si hubo un malentendido 🙏",
+                  "El abusador se excusa y la situación mejora 🙂",
+                  "Alguien más te apoya y la tensión baja 🤝",
+                  "Decides no seguir en el partido y calmarte 🚪"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Decides salirte del partido 🚪",
+            "siguiente": {
+              "a3_3": {
+                "descripcion": "Te alejas del juego para evitar problemas.",
+                "opciones": [
+                  "Vas a hablar con un profesor sobre lo sucedido 👩‍🏫",
+                  "Te sientas a descansar con otros compañeros 🪑",
+                  "Practicas solo para mejorar tu control ⚽",
+                  "Reflexionas sobre cómo quieres manejar la próxima vez 🤔",
+                  "Buscas otro juego más tranquilo para participar 🎯"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "B": {
+      "b1": {
+        "descripcion": "Un grupo se acerca y comienza a burlarse de tu ropa. Te dicen que 'pareces raro'.",
+        "opciones": [
+          {
+            "eleccion": "Les ignoras 😶",
+            "siguiente": {
+              "b1_1": {
+                "descripcion": "No les das importancia y sigues en lo tuyo.",
+                "opciones": [
+                  "Te quedas tranquilo y lees un libro 📚",
+                  "Te cambias de lugar para estar más cómodo 🪑",
+                  "Hablas con un amigo de confianza 👥",
+                  "Los ignoras hasta que se aburren 😌",
+                  "Les respondes con una sonrisa para minimizar 😄"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Les enfrentas ✊",
+            "siguiente": {
+              "b1_2": {
+                "descripcion": "Les dices que sus burlas no están bien y pides respeto.",
+                "opciones": [
+                  "Se disculpan y la situación mejora 🙏",
+                  "La discusión crece y un profesor interviene 👩‍🏫",
+                  "Te sientes orgulloso de defenderte 💪",
+                  "Te aíslas para calmarte y luego vuelves 🚶",
+                  "Buscas apoyo en otros compañeros que te apoyen 🤝"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te vas a otro lugar 🌳",
+            "siguiente": {
+              "b1_3": {
+                "descripcion": "Te alejas del grupo para evitar la situación.",
+                "opciones": [
+                  "Encuentras un lugar tranquilo para estar solo 🧘",
+                  "Te unes a un grupo más amable 👥",
+                  "Hablas con un adulto sobre lo que pasó 👩‍🏫",
+                  "Reflexionas y decides no dejar que te afecte 💭",
+                  "Esperas un rato y luego vuelves con calma 🙂"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "b2": {
+        "descripcion": "Otro niño se acerca y te pregunta si puede sentarse contigo. Parece tímido y también lo molestan.",
+        "opciones": [
+          {
+            "eleccion": "Lo aceptas y hacen amistad 🤝",
+            "siguiente": {
+              "b2_1": {
+                "descripcion": "Le das espacio y empieza una nueva amistad.",
+                "opciones": [
+                  "Juegan juntos y él se siente mejor 😊",
+                  "Lo presentas a tus amigos para integrarlo 👋",
+                  "Lo escuchas y lo apoyas cuando lo molestan 💬",
+                  "Le recuerdas que puede contar contigo 🤝",
+                  "Deciden jugar otro juego más seguro 🎲"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Lo rechazas y él se va triste 😔",
+            "siguiente": {
+              "b2_2": {
+                "descripcion": "Te cierras y el niño se va decepcionado.",
+                "opciones": [
+                  "Te sientes culpable y vas a disculparte 🙏",
+                  "Reflexionas sobre por qué no quisiste incluirlo 🤔",
+                  "Lo vuelves a invitar más tarde 🤝",
+                  "Hablas con alguien sobre cómo actuar mejor 🗣️",
+                  "Decides ser más abierto la próxima vez 🌟"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Lo aceptas, pero llegan otros a burlarse de ambos 😢",
+            "siguiente": {
+              "b2_3": {
+                "descripcion": "Ambos son objeto de burlas; la situación es difícil.",
+                "opciones": [
+                  "Buscan a un profesor para intervenir 👩‍🏫",
+                  "Se levantan y se van a otro lugar juntos 🚶",
+                  "Defienden su amistad con firmeza ✊",
+                  "Piden ayuda a otros amigos para apoyo 🤝",
+                  "Mantienen la calma y se apoyan mutuamente 💪"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "b3": {
+        "descripcion": "Estás comiendo tu merienda, y un compañero llega y te la arrebata. Se burla diciendo que eres 'débil'.",
+        "opciones": [
+          {
+            "eleccion": "Reclamas tu merienda ✋",
+            "siguiente": {
+              "b3_1": {
+                "descripcion": "Exiges que te devuelva lo que es tuyo.",
+                "opciones": [
+                  "El compañero te la devuelve y se disculpa 🙏",
+                  "Tienes que pelear por recuperarla y hay intervención 😟",
+                  "Pides a un adulto que medie 👩‍🏫",
+                  "Compartes parte de tu merienda para calmar la tensión 🍎",
+                  "Guardas silencio y compras otra merienda después 💭"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Buscas a un profesor 👩‍🏫",
+            "siguiente": {
+              "b3_2": {
+                "descripcion": "Con la ayuda del profesor, la situación se resuelve.",
+                "opciones": [
+                  "Recuperas tu merienda y te sientes protegido 😊",
+                  "El compañero recibe una advertencia 🛑",
+                  "Hablas con el profesor para prevenir que pase otra vez 👂",
+                  "Decides comer en otro lugar más seguro 🪑",
+                  "Agradeces el apoyo del adulto 🙏"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Lo ignoras y compartes con otro amigo 🍎",
+            "siguiente": {
+              "b3_3": {
+                "descripcion": "Prefieres no confrontar y buscas compañía amable.",
+                "opciones": [
+                  "Compartes y pasas un buen rato con tu amigo 🤝",
+                  "El abusador se queda sorprendido y se retira 😶",
+                  "Decides comprar o traer otra merienda la próxima vez 🥪",
+                  "Hablas con tu amigo sobre cómo manejarlo mejor 💬",
+                  "Reflexionas sobre cuándo pedir ayuda 👩‍🏫"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "C": {
+      "c1": {
+        "descripcion": "Tus amigos están hablando de un videojuego, pero un abusador empieza a reírse de ti diciendo que 'no sabes nada'.",
+        "opciones": [
+          {
+            "eleccion": "Sigues participando con seguridad 🎮",
+            "siguiente": {
+              "c1_1": {
+                "descripcion": "Intervienes con confianza y aportas a la conversación.",
+                "opciones": [
+                  "Explicas por qué te gusta ese juego y muestras conocimiento 🧠",
+                  "Invitas a jugar juntos para demostrar lo que dices 🎮",
+                  "Te ríes del comentario y sigues adelante 😄",
+                  "Pides a tus amigos que cambien de tema 🙏",
+                  "Les cuentas una anécdota divertida relacionada 😅"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te quedas callado 😶",
+            "siguiente": {
+              "c1_2": {
+                "descripcion": "Te retraes y pierdes la oportunidad de participar.",
+                "opciones": [
+                  "Después les preguntas en privado sobre el juego 👂",
+                  "Practicas en casa para sentirte más seguro 🕹️",
+                  "Hablas con un amigo que te apoye 🤝",
+                  "Decides que no te interesa tanto y escuchas 📝",
+                  "Planteas otro tema para la conversación 🎲"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Le respondes con humor 😂",
+            "siguiente": {
+              "c1_3": {
+                "descripcion": "Bromeas para quitar tensión y la situación se suaviza.",
+                "opciones": [
+                  "Todo el mundo se ríe y vuelves a participar 😅",
+                  "El abusador se queda sin argumentos 😶",
+                  "Aprovechas para cambiar de tema y agradar ✨",
+                  "Ganas simpatía usando el humor con respeto 🤝",
+                  "Después hablas con un amigo para prepararte mejor 👍"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "c2": {
+        "descripcion": "Uno de tus amigos te empuja como broma, pero lo hace muy fuerte y caes. Los demás se ríen.",
+        "opciones": [
+          {
+            "eleccion": "Te levantas y lo enfrentas ✊",
+            "siguiente": {
+              "c2_1": {
+                "descripcion": "Le dices que no está bien y que te lastimó.",
+                "opciones": [
+                  "Se disculpa y la relación sigue normal 🙏",
+                  "La situación escala y un adulto interviene 👩‍🏫",
+                  "Decides darte distancia de ese 'amigo' 🚶",
+                  "Hablas con otros amigos sobre lo ocurrido 💬",
+                  "Le propones reglas claras para el juego ⚖️"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te ríes para que no se burlen 😅",
+            "siguiente": {
+              "c2_2": {
+                "descripcion": "Te ríes para desactivar la burla, aunque te hayas dolido por dentro.",
+                "opciones": [
+                  "Más tarde hablas en privado sobre cómo te sentiste 💬",
+                  "Sigues participando pero con cuidado ⚠️",
+                  "Te sientes confuso y buscas apoyo 🤝",
+                  "Decides no permitir ese tipo de bromas en el futuro ✋",
+                  "Reflexionas si esos son verdaderos amigos 🤔"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te sientes herido y te alejas 😔",
+            "siguiente": {
+              "c2_3": {
+                "descripcion": "Te vas a un lugar tranquilo para calmarte.",
+                "opciones": [
+                  "Hablas con un adulto sobre lo que pasó 👩‍🏫",
+                  "Vuelves después y observas si cambió algo 👀",
+                  "Buscas compañía de alguien que te cuide 🤝",
+                  "Piensas en cómo responder mejor la próxima vez 🧠",
+                  "Decides no participar en juegos bruscos por ahora 🚫"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "c3": {
+        "descripcion": "Están organizando equipos para un juego, pero nadie quiere escogerte. Te hacen sentir excluido.",
+        "opciones": [
+          {
+            "eleccion": "Te unes a otro grupo que te recibe 🤝",
+            "siguiente": {
+              "c3_1": {
+                "descripcion": "Encuentras un grupo alternativo que te incluye con gusto.",
+                "opciones": [
+                  "Te diviertes y haces nuevos amigos 🎉",
+                  "Agradeces y ayudas al equipo a ganar 🤗",
+                  "Invitas a los que te excluyeron a unirse después 🤝",
+                  "Aprendes que hay más personas con quienes jugar 🌍",
+                  "Te sientes más seguro y animado 🙂"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te quedas solo 😢",
+            "siguiente": {
+              "c3_2": {
+                "descripcion": "Quedas fuera del juego y te quedas observando con tristeza.",
+                "opciones": [
+                  "Hablas con la profe para pedir inclusión 👩‍🏫",
+                  "Vas a buscar otra actividad que te guste 🎨",
+                  "Te unes a alguien que está solo también 🤝",
+                  "Reflexionas sobre cómo mejorar tus habilidades ⚽",
+                  "Decides organizar un juego propio y convocar gente 📣"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Hablas con la profe para que intervenga 👩‍🏫",
+            "siguiente": {
+              "c3_3": {
+                "descripcion": "Un adulto ayuda a reorganizar equipos y promover inclusión.",
+                "opciones": [
+                  "La profe crea equipos equitativos y participas ✅",
+                  "Se inicia una actividad que incluye a todos 🧩",
+                  "Te sientes apoyado y más seguro 😊",
+                  "La profe habla con los que excluyeron para educar 👩‍🏫",
+                  "Aprendes la importancia de pedir ayuda cuando lo necesitas 💡"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    },
+    "D": {
+      "d1": {
+        "descripcion": "Un grupo comienza a seguirte y a imitar tu forma de caminar. Se ríen de ti.",
+        "opciones": [
+          {
+            "eleccion": "Los ignoras 😶",
+            "siguiente": {
+              "d1_1": {
+                "descripcion": "No reaccionas a sus burlas y sigues tu camino.",
+                "opciones": [
+                  "Entras a un área más tranquila del patio 🌳",
+                  "Canturreas para no prestar atención 🎵",
+                  "Te unes con otro grupo que hace otra actividad 👥",
+                  "Buscas un adulto si la burla continúa 👩‍🏫",
+                  "Reflexionas en voz baja y sigues adelante 🤔"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te volteas y los enfrentas ✊",
+            "siguiente": {
+              "d1_2": {
+                "descripcion": "Les dices que su comportamiento no está bien y que paren.",
+                "opciones": [
+                  "Uno de ellos se disculpa y la situación termina 🙏",
+                  "La situación escala y un adulto interviene 🛑",
+                  "Te sientes empoderado por defenderte 💪",
+                  "Algunos compañeros te respaldan públicamente 🤝",
+                  "Decides alejarte para evitar problemas 🚶"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Buscas un adulto 🚨",
+            "siguiente": {
+              "d1_3": {
+                "descripcion": "Vas a un profesor o encargado del patio para pedir ayuda.",
+                "opciones": [
+                  "El adulto conversa con el grupo y la burla para 👩‍🏫",
+                  "Recibes apoyo y te sientes más seguro 😊",
+                  "El adulto organiza actividades para prevenir burlas 🧩",
+                  "Te recomiendan estrategias para ignorar y pedir ayuda 🔧",
+                  "Sientes alivio y vuelves a tus cosas con calma 🙏"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "d2": {
+        "descripcion": "Encuentras a un niño llorando detrás de una pared. Dice que lo empujaron y lo llamaron 'llorón'.",
+        "opciones": [
+          {
+            "eleccion": "Lo consuelas y juegas con él 🤝",
+            "siguiente": {
+              "d2_1": {
+                "descripcion": "Le ofreces compañía y lo ayudas a sentirse mejor.",
+                "opciones": [
+                  "Juegan juntos y él sonríe de nuevo 😊",
+                  "Lo llevan a un adulto para que medie 👩‍🏫",
+                  "Le cuentas que puede hablar contigo cuando lo necesite 💬",
+                  "Invitas a otro amigo para que también lo apoye 👥",
+                  "Deciden crear reglas para que no lo molesten otra vez ⚖️"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Lo ignoras y sigues caminando 🚶",
+            "siguiente": {
+              "d2_2": {
+                "descripcion": "Pasas de largo y te quedas con la consciencia de no haber ayudado.",
+                "opciones": [
+                  "Te sientes mal y vuelves para disculparte 🙏",
+                  "Te preguntas por qué no actuaste y aprendes para la próxima 🤔",
+                  "Decides que la próxima vez sí ayudarás 💪",
+                  "Hablas con alguien sobre por qué no te involucraste 🗣️",
+                  "Vas a buscar a un adulto para que lo ayude 👩‍🏫"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Vas a buscar ayuda 👩‍🏫",
+            "siguiente": {
+              "d2_3": {
+                "descripcion": "Buscas un adulto para que atienda al niño y medie la situación.",
+                "opciones": [
+                  "El adulto atiende al niño y calma la situación 👩‍🏫",
+                  "Ambos hablan con el agresor y se toman medidas 🛑",
+                  "El niño recibe apoyo y te agradece 🙏",
+                  "Aprendes la importancia de actuar y pedir ayuda ✔️",
+                  "Organizan actividades para evitar que vuelva a pasar 🧩"
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "d3": {
+        "descripcion": "Un compañero te detiene y te dice que si no le das tus canicas/monedas, te golpeará. Te amenaza frente a otros.",
+        "opciones": [
+          {
+            "eleccion": "Se las das por miedo 😔",
+            "siguiente": {
+              "d3_1": {
+                "descripcion": "Cedes por miedo; te quedas con malestar y vergüenza.",
+                "opciones": [
+                  "Se las cuentas a un adulto después y pides ayuda 👩‍🏫",
+                  "Tratas de recuperarlas hablando con calma 💬",
+                  "Hablas con un amigo para que te acompañe la próxima vez 🤝",
+                  "Guardas silencio por miedo a represalias 😨",
+                  "Decides evitar ese lugar del patio por ahora 🚶"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Te niegas y lo enfrentas ✊",
+            "siguiente": {
+              "d3_2": {
+                "descripcion": "Te resistes y le dices que no puede obligarte.",
+                "opciones": [
+                  "La amenaza se convierte en pelea y un adulto interviene 🛑",
+                  "El agresor se retira al ver que no cedes 🚶",
+                  "Buscas apoyo en tus compañeros para respaldarte 🤝",
+                  "Hablas después con un adulto para prevenir más amenazas 👩‍🏫",
+                  "Te sientes orgulloso por defenderte de forma no violenta 💪"
+                ]
+              }
+            }
+          },
+          {
+            "eleccion": "Buscas rápidamente a un adulto 🚨",
+            "siguiente": {
+              "d3_3": {
+                "descripcion": "Corres a avisar a un profesor o encargado del patio para detener la amenaza.",
+                "opciones": [
+                  "El adulto actúa inmediatamente y asegura tu protección 👩‍🏫",
+                  "Se separa al agresor y se toman medidas disciplinarias 🛑",
+                  "Aprendes a pedir ayuda cuando tu seguridad está en riesgo ✔️",
+                  "Los compañeros ven la intervención y aprenden a no permitirlo 👀",
+                  "Te sientes aliviado y respaldado por el adulto 😊"
+                ]
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+
+  "finalp": {
+    "descripcion": "Termina el recreo y vuelves a tus actividades con lo aprendido.",
+    "leccion": "Tus decisiones en el recreo influyen en tu seguridad y en la convivencia. Defenderte con respeto, pedir ayuda a adultos cuando hay violencia, incluir a otros y apoyarse entre compañeros construye un patio más seguro y amable. La empatía, el valor para pedir ayuda y la disposición a ayudar a otros son claves para una buena convivencia."
+  }
+}
