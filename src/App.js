@@ -9,6 +9,7 @@ import Footer from "./components/footer";
 import Juego from "./pages/juego";
 import Historia from './pages/historia';
 import Politica from './pages/politica';
+import Recurso from './pages/recurso';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap-icons/font/bootstrap-icons.css';
@@ -65,6 +66,7 @@ function MainLayout() {
         <Route path="/juego" element={<Juego />} />
         <Route path="/historia" element={<Historia />} />
         <Route path="/politica" element={<Politica />} />
+        <Route path="/recurso" element={<Recurso />} />
       </Routes>
 
       {/* ✅ Footer solo si la ruta no está en sinFooter */}

@@ -8,9 +8,15 @@ function Navbar() {
         <a
           className="navbar-brand fw-bold"
           style={{ color: "#4A90E2" }}
-          href="#"
+          href="/"
         >
           Conectados contra el bullying
+        <img
+          src="/img/logo.png"
+          alt="Logo"
+          className="img-fluid"
+          style={{ maxWidth: "30px" }}
+        />
         </a>
         <button
           className="navbar-toggler"
@@ -37,7 +43,7 @@ function Navbar() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#recursos">
+              <a className="nav-link" href="/recurso">
                 Recursos
               </a>
             </li>

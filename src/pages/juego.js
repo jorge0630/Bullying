@@ -7,10 +7,17 @@ function Juego() {
   const navigate = useNavigate();
 
   const handleOnAvatarExported = (event) => {
-    const avatarUrl = event.data.url;
-    console.log("Avatar URL:", avatarUrl);
+    const avatarUrlGlb = event.data.url;
 
-    localStorage.setItem("avatarUrl", avatarUrl);
+    // ✅ Convertir el modelo GLB en una imagen PNG para usar con <img>
+    const avatarUrlPng = avatarUrlGlb.replace(".glb", ".png");
+
+    console.log("Avatar URL (imagen):", avatarUrlPng);
+
+    // Guardar la URL en localStorage
+    localStorage.setItem("avatarUrl", avatarUrlPng);
+
+    // Redirigir al juego
     navigate("/historia");
   };
 
@@ -27,7 +34,7 @@ function Juego() {
       {/* Avatar Creator con marco */}
       <div className="avatar-box">
         <AvatarCreator
-          subdomain="conectados-contra-el-bullying" //  reemplázalo con tu subdominio de Ready Player Me
+          subdomain="conectados-contra-el-bullying" // tu subdominio de Ready Player Me
           editorConfig={{
             clearCache: true,
             bodyType: "fullbody",
