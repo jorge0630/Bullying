@@ -66,21 +66,21 @@ function Footer() {
             <h5 className="fw-bold">Síguenos</h5>
             <div className="d-flex justify-content-center justify-content-md-start">
               <a
-                href="#"
+                href="#!"
                 className="text-white me-3"
                 style={{ fontSize: "1.5rem" }}
               >
                 <i className="bi bi-facebook"></i>
               </a>
               <a
-                href="#"
+                href="#!"
                 className="text-white me-3"
                 style={{ fontSize: "1.5rem" }}
               >
                 <i className="bi bi-instagram"></i>
               </a>
               <a
-                href="#"
+                href="#!"
                 className="text-white"
                 style={{ fontSize: "1.5rem" }}
               >
