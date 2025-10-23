@@ -78,20 +78,24 @@ function Recursos() {
           <div className="row g-4">
             <div className="col-md-6">
               <div className="border rounded p-3 h-100">
-                <h5 className="fw-semibold">Guía para docentes</h5>
+                <h5 className="fw-semibold">Guía para docentes.</h5>
                 <p className="text-muted mb-3">
                   Material para identificar y atender casos de bullying en el
                   aula.
                 </p>
-                <button className="btn btn-outline-primary w-100 fw-bold">
-                  Descargar PDF
-                </button>
+                <a
+                href="/img/infografiaProfe.jpg"
+                download
+                className="btn btn-outline-primary w-100 fw-bold"
+                >
+                    Descargar PDF
+                </a>
               </div>
             </div>
 
             <div className="col-md-6">
               <div className="border rounded p-3 h-100">
-                <h5 className="fw-semibold">Infografía para estudiantes</h5>
+                <h5 className="fw-semibold">Infografía para estudiantes.</h5>
                 <p className="text-muted mb-3">
                   Consejos prácticos para promover el respeto y la empatía entre
                   compañeros.
@@ -105,7 +109,25 @@ function Recursos() {
                 </a>
               </div>
             </div>
+
+            <div className="col-md-6">
+              <div className="border rounded p-3 h-100">
+                <h5 className="fw-semibold">La empatía se enseña con el ejemplo.</h5>
+                <p className="text-muted mb-3">
+                    Ponerse en el lugar del otro es el primer paso para cambiar el mundo.
+                </p>
+                <a
+                href="/img/infografiaProfe.jpg"
+                download
+                className="btn btn-outline-primary w-100 fw-bold"
+                >
+                Descargar PDF
+                </a>
+              </div>
+            </div>
           </div>
+
+          
         </section>
 
         {/* =========================
@@ -118,22 +140,22 @@ function Recursos() {
           <ul className="list-group list-group-flush">
             <li className="list-group-item">
               <a
-                href="https://www.unicef.org/es/end-violence"
+                href="https://www.unesco.org/es/articles/violencia-y-acoso-escolar-la-unesco-reclama-una-mejor-proteccion-de-los-estudiantes "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-primary fw-semibold"
               >
-                UNICEF – Campañas contra la violencia escolar
+                UNESCO – Campañas contra la violencia escolar
               </a>
             </li>
             <li className="list-group-item">
               <a
-                href="https://bullyingnoway.gov.au/"
+                href="https://share.google/iAFRh09bzIYd3QjLx "
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-decoration-none text-primary fw-semibold"
               >
-                Bullying No Way! – Recursos internacionales
+                UNICEF – Recursos pedagógicos
               </a>
             </li>
           </ul>

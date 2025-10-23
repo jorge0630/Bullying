@@ -40,8 +40,7 @@ export default function Escena({ escenarioActual, avatarUrl }) {
 
       {escenarioActual === "s4" && (
         <>
-          <img src="/personajes/niño1.png" alt="Niño" className="personaje niño1" />
-          <img src="/personajes/niña2.png" alt="Niña" className="personaje niña2" />
+          <img src="/img/profesor.png" alt="Niño" className="personaje profe" />
         </>
       )}
 
