@@ -117,7 +117,7 @@ function Recursos() {
                     Ponerse en el lugar del otro es el primer paso para cambiar el mundo.
                 </p>
                 <a
-                href="/img/infografiaProfe.jpg"
+                href="/img/infografiaEmpatico.jpg"
                 download
                 className="btn btn-outline-primary w-100 fw-bold"
                 >

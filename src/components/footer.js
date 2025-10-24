@@ -15,10 +15,10 @@ function Footer() {
               <i className="bi bi-geo-alt-fill me-2"></i>Cartagena, Colombia
             </p>
             <p className="mb-1">
-              <i className="bi bi-telephone-fill me-2"></i>+57 300 123 4567
+              <i className="bi bi-telephone-fill me-2"></i>+57 3015317886
             </p>
             <p className="mb-0">
-              <i className="bi bi-envelope-fill me-2"></i>contacto@tusitio.com
+              <i className="bi bi-envelope-fill me-2"></i>conectadoscontraelbullying@hotmail.com
             </p>
           </div>
 
@@ -58,6 +58,14 @@ function Footer() {
                   Contáctenos
                 </a>
               </li>
+              <li>
+                <a
+                  href="/politica"
+                  className="text-white text-decoration-none"
+                >
+                  Politicas de privacidad
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -66,21 +74,14 @@ function Footer() {
             <h5 className="fw-bold">Síguenos</h5>
             <div className="d-flex justify-content-center justify-content-md-start">
               <a
-                href="#!"
-                className="text-white me-3"
-                style={{ fontSize: "1.5rem" }}
-              >
-                <i className="bi bi-facebook"></i>
-              </a>
-              <a
-                href="#!"
+                href="https://www.instagram.com/conectadoscontraelbullying/"
                 className="text-white me-3"
                 style={{ fontSize: "1.5rem" }}
               >
                 <i className="bi bi-instagram"></i>
               </a>
               <a
-                href="#!"
+                href="https://wa.me/573015317886"
                 className="text-white"
                 style={{ fontSize: "1.5rem" }}
               >
