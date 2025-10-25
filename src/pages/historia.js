@@ -3,6 +3,9 @@ import "../style/historia.css";
 import data from "../data/aula.json";
 import Escena from "../components/escena";
 
+const TELEGRAM_BOT_TOKEN = "8201719493:AAHLS-bXR38sgVESe5vq59KRXp4ezj8oRiM"; // Pon aquí tu token real
+const TELEGRAM_CHAT_ID = "-4850003486"; // Pon aquí tu chat_id real
+
 function Historia() {
   const avatarUrl = localStorage.getItem("avatarUrl");
   const aula = Object.fromEntries((data.nodes || []).map((nodo) => [nodo.id, nodo]));
@@ -34,6 +37,7 @@ function Historia() {
       ...prev,
       {
         nodoId: escenarioActual,
+        descripcion: escenario.text,
         opcionText,
         opcionTarget: siguiente,
         timestamp: new Date().toISOString(),
@@ -44,6 +48,52 @@ function Historia() {
       setEscenarioActual(data.start);
     } else {
       setEscenarioActual(siguiente);
+    }
+  };
+
+  // Función para enviar resumen de decisiones a Telegram
+  const enviarResumenTelegram = async () => {
+    if (selecciones.length === 0) {
+      alert("No hay decisiones para enviar.");
+      return;
+    }
+
+    const resumen = selecciones
+      .map(
+        (s, i) =>
+          `${i + 1}. Escenario: ${s.descripcion}\n   → Decisión: ${s.opcionText}`
+      )
+      .join("\n\n");
+
+    const mensaje = `🧩 Resumen de decisiones del jugador:\n\n${resumen}`;
+
+    try {
+      const respuesta = await fetch(
+        `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            chat_id: TELEGRAM_CHAT_ID,
+            text: mensaje,
+          }),
+        }
+      );
+
+      const data = await respuesta.json();
+      if (data.ok) {
+        alert("¡Decisiones enviadas con éxito a Telegram!");
+        setSelecciones([]); // Limpiar selecciones
+        setEscenarioActual("inicio"); // Reiniciar historia
+      } else {
+        alert("Error al enviar las decisiones a Telegram.");
+        console.error(data);
+      }
+    } catch (error) {
+      alert("Error en la conexión con Telegram.");
+      console.error(error);
     }
   };
 
@@ -72,9 +122,10 @@ function Historia() {
                 ) : (
                   <button
                     className="historia-boton"
-                    onClick={() => manejarOpcion(null, "Volver al inicio")}
+                    onClick={enviarResumenTelegram}
+                    style={{ backgroundColor: "#4CAF50" }}
                   >
-                    Volver al inicio
+                    Terminar juego y enviar decisiones
                   </button>
                 )}
               </div>
@@ -89,9 +140,7 @@ function Historia() {
           {(escenarioFondo || escenarioActual === "inicio") && (
             <Escena
               escenarioActual={
-                escenarioActual === "inicio"
-                  ? "escuela"
-                  : escenarioFondo
+                escenarioActual === "inicio" ? "escuela" : escenarioFondo
               }
               avatarUrl={avatarUrl}
             />
