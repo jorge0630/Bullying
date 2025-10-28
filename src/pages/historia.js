@@ -4,7 +4,7 @@ import data from "../data/aula.json";
 import Escena from "../components/escena";
 
 const TELEGRAM_BOT_TOKEN = "8201719493:AAHLS-bXR38sgVESe5vq59KRXp4ezj8oRiM"; // Pon aquí tu token real
-const TELEGRAM_CHAT_ID = "-4850003486"; // Pon aquí tu chat_id real
+const TELEGRAM_CHAT_ID = "-1003235013202"; // Pon aquí tu chat_id real
 
 function Historia() {
   const avatarUrl = localStorage.getItem("avatarUrl");
